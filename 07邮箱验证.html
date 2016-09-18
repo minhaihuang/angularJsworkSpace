@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="resource/angular.min.js"></script>
+</head>
+<body>
+    <form ng-app="" name="myForm">
+        Email:
+        <input type="email" name="myEmail" ng-model="emailText">
+        <span ng-show="myForm.myEmail.$error.email">这不是一个合法的Email</span>
+    </form>
+</body>
+</html>

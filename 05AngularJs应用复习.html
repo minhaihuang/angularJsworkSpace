@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="resource/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        姓为：<input type="text" ng-model="firstName">
+        名为：<input type="text" ng-model="lastName">
+
+        姓名为：{{firstName+" "+lastName}}
+    </div>
+
+    <script>
+        //获取angularJs应用块
+        var app=angular.module("myApp",[]);
+        app.controller("myCtrl",function($scope){
+            $scope.firstName="hhm";
+            $scope.lastName="hhm2";
+        });
+    </script>
+</body>
+</html>
